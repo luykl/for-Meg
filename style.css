@@ -1,0 +1,26 @@
+[hidden] {
+    display: none !important;
+  }
+
+body {
+    padding-bottom: 80px;
+}
+
+.illustrate {
+    width: 95vw;
+    height: 95vw;
+    background-color: aqua;
+}
+
+button {
+    display:block;
+    margin: 30px auto;
+    margin-top: 60px;
+}
+
+#happyContainer {
+    position: fixed;
+    bottom: 40%;
+    left: 50%;
+    transform: translateX(-50%);
+}
