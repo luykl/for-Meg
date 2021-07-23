@@ -4,36 +4,65 @@
 
 body {
     padding-bottom: 80px;
+    margin: 0;
+    font-family: sans-serif;
 }
 
-.illustrate {
-    width: 95vw;
-    
-}
 
 button {
     display:block;
-    margin: 30px auto;
+    margin: 10px auto;
     margin-top: 60px;
+    font-size: 1em;
+    border-radius: 12%;
+    border: 1.5px solid black;
+    padding: 8px 16px;
+    box-shadow: 2px 2px 3px .5px rgb(128, 128, 128, .2);
 }
 
 #happyContainer {
+    width: 100vw;
+    height: 100vh;
     position: fixed;
-    bottom: 40%;
-    left: 50%;
-    transform: translateX(-50%);
+    bottom: 0;
+    background-color: rgb(0, 0, 0, .8);
+    animation-name: fade;
+    animation-duration: 4s;
 }
 
 iframe {
     width: 100%;
-    padding: 2px;
-    border: 4px solid black;
-    border-radius: 4px;
+    
 }
 
 img {
     width:100%;
-    padding: 2px;
-    border: 4px solid black;
-    border-radius: 4px;
+    max-width: 480px;
+    display: block;
+    margin: 0 auto;
+    
 }
+
+#happy {
+    position: relative;
+    top: 35%;
+    transform: translateY(-50%);
+    font-size: 64px;
+    color:darkred;
+    text-shadow: 1px 1px red;
+    text-align: center;
+    font-family: 'Shadows Into Light', cursive;
+    animation-name: fadeText;
+    animation-duration: 4s;
+}
+
+@keyframes fade {
+    from {background-color: rgb(0, 0, 0, 0)}
+    to {background-color: rgb(0, 0, 0, .8)}
+  }
+  
+@keyframes fadeText {
+    from {opacity: 0;}
+    to {opacity: 1}
+  }
+  
